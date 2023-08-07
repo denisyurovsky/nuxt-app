@@ -1,20 +1,19 @@
 <template>
     <div>
-     <header>
-         <nav>
-             <ul>
-                 <li><NuxtLink to="/products">Nuxt Merch</NuxtLink></li>
-                 
-             </ul>
+     <header class="shadow-sm bg-white" >
+         <nav class="container mx-auto p-4">
+                 <NuxtLink class="font-bold" to="/products">Nuxt Merch</NuxtLink>
          </nav>
      </header>
- </div>
- <div>
+ <div  class="container mx-auto p-4">
      <slot />
-     <footer>
-        <li><NuxtLink to="/">Home</NuxtLink></li>
-        <li><NuxtLink to="/about">About</NuxtLink></li>
-        <li><NuxtLink to="/products">Products</NuxtLink></li>
+     </div>
+     <footer  class="container mx-auto p-4 flex justify-between border-t-2">
+        <ul class="flex gap-4">
+            <li><NuxtLink to="/">Home</NuxtLink></li>
+            <li><NuxtLink to="/about">About</NuxtLink></li>
+            <li><NuxtLink to="/products">Products</NuxtLink></li>
+        </ul>
      </footer>
  </div>
  </template>
